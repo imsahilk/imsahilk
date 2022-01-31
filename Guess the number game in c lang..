@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+void main()
+{
+    int s, p;
+    time_t t;
+     // Initialization of random number generator
+    srand((unsigned) time(&t));
+
+    // get the random number
+    p = rand() % 21;
+    for(int n, n!=q || n!=Q)
+    {
+       int b;
+       printf("Hey welcome to the game GUESS THE NUMBER\n");
+       printf("so rules are simple you have to guess any random number\n * If you are able to guess the correct number in 5 lives you will get a price\n");
+       for(int a=0, a<=5, a++)   {
+       printf("Guess any number:  ");
+       scanf("%d", &b);
+      if(b<p) {
+          printf("You have chosen smaller number");
+        }
+      else if(b>p)  {
+          printf("You have chosen greater number");
+      }
+      else if (b>20)  {
+          printf("Hey i said number between 0  - 20");
+      }
+      else if(b=p)  {
+          printf("You won the game and you got tatti");
+          goto end;
+      }
+      }
+      end:
+      printf("Do you want to continue or Quit\n* c to continue\n* q to quit");
+      scanf("%d", &n);
+      if (n=='q')
+      {
+          printf("quiting.....\n");
+          goto last;
+      }
+    }
+    last:
+}
